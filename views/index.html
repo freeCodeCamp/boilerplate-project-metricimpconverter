@@ -18,13 +18,12 @@
     <div id='userstories' style='margin-left: 5%; margin-top: 5%'>
       <h3>User Stories</h3>
       <ol>
-        <li>I will help prevent the client from trying to guess(sniff) the MIME type.</li>
-        <li>I will prevent cross-site scripting (XSS) attacks.</li>
         <li>I can <b>GET</b> <code>/api/convert</code> with a single parameter containing an accepted number and unit and have it converted.</li>
         <li>Hint: Split the input by looking for the index of the first character.</li>
-        <li>I can convert 'gal' to 'L' and vice versa. <b>(1 gal to 3.78541 L)</b></li>
+        <li>I can convert 'gal' to 'l' and vice versa. <b>(1 gal to 3.78541 l)</b></li>
         <li>I can convert 'lbs' to 'kg' and vice versa. <b>(1 lbs to 0.453592 kg)</b></li> 
         <li>I can convert 'mi' to 'km' and vice versa. <b>(1 mi to 1.60934 km)</b></li>
+        <li>All units must be returned lowercase.</li>
         <li>If my unit of measurement is invalid, returned will be 'invalid unit'.</li>
         <li>If my number is invalid, returned with will 'invalid number'.</li>
         <li>If both are invalid, return will be 'invalid number and unit'.</li>
@@ -39,7 +38,7 @@
       <code>/api/convert?input=5.4/3lbs</code><br>
       <code>/api/convert?input=kg</code><br>
       <h3>Example return:</h3>
-      <code>{initNum: 3.1, initUnit: 'mi', returnNum: 4.98897, returnUnit: 'km', string: '3.1 miles converts to 4.98897 kilometers'}</code>
+      <code>{initNum: 3.1, initUnit: 'mi', returnNum: 4.98895, returnUnit: 'km', string: '3.1 miles converts to 4.98895 kilometers'}</code>
     </div>
     <hr style='margin: 50px'>
     <div id='testui' style='margin-left: 5%'>
