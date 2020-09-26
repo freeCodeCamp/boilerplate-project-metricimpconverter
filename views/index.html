@@ -20,14 +20,14 @@
       <ol>
         <li>I can <b>GET</b> <code>/api/convert</code> with a single parameter containing an accepted number and unit and have it converted.</li>
         <li>Hint: Split the input by looking for the index of the first character.</li>
-        <li>I can convert 'gal' to 'L' and vice versa. <b>(1 gal to 3.78541 l)</b></li>
-        <li>I can convert 'lbs' to 'kg' and vice versa. <b>(1 lbs to 0.453592 kg)</b></li> 
-        <li>I can convert 'mi' to 'km' and vice versa. <b>(1 mi to 1.60934 km)</b></li>
+        <li>I can convert '<code>gal</code>' to '<code>L</code>' and vice versa. <b>(1 gal to 3.78541 l)</b></li>
+        <li>I can convert '<code>lbs</code>' to '<code>kg</code>' and vice versa. <b>(1 lbs to 0.453592 kg)</b></li> 
+        <li>I can convert '<code>mi</code>' to '<code>km</code>' and vice versa. <b>(1 mi to 1.60934 km)</b></li>
         <li>All incoming units should be accepted in both upper and lower case, but should be returned in both the <code>initUnit</code> and
-          <code>returnUnit</code> in lower case, except for liter, which should be represented as an uppercase "L".</li>
+          <code>returnUnit</code> in lower case, except for liter, which should be represented as an uppercase '<code>L</code>'.</li>
         <li>If my unit of measurement is invalid, returned will be '<code>invalid unit</code>'.</li>
         <li>If my number is invalid, returned with will '<code>invalid number</code>'.</li>
-        <li>If both are invalid, return will be '<code>invalid number and unit</code>'.</li>
+        <li>If the unit and number are invalid, returned will be '<code>invalid number and unit</code>'.</li>
         <li>I can use fractions, decimals or both in my parameter(ie. 5, 1/2, 2.5/6), but if nothing is provided it will default to 1.</li>
         <li>My return will consist of the <code>initNum</code>, <code>initUnit</code>, <code>returnNum</code>, <code>returnUnit</code>, and string spelling out units in format <code>{initNum} {initial_Units} converts to {returnNum} {return_Units}</code> with the numbers rounded to 5 decimals.</li>
         <li>All 16 unit tests are complete and passing.</li>
