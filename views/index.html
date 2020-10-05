@@ -58,7 +58,7 @@
             crossorigin="anonymous"></script>
     <script>
       $(function() {
-        $('#convertForm').submit(function() {
+        $('#convertForm').submit(function(event) {
           event.preventDefault();
           $.ajax({
             url: '/api/convert',
