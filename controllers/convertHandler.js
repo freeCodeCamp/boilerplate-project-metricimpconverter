@@ -1,11 +1,3 @@
-/*
-*
-*
-*       Complete the handler logic below
-*       
-*       
-*/
-
 function ConvertHandler() {
   
   this.getNum = function(input) {
