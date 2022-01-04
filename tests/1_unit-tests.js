@@ -43,7 +43,7 @@ suite('Unit Tests', function(){
           assert.equal(convertHandler.getReturnUnit(ele), expected(i));
       });
 
-      //done();
+      done();
     });
 
   suite('Function convertHandler.spellOutUnit(unit)', function(){
@@ -55,14 +55,29 @@ suite('Unit Tests', function(){
   suite('Function convertHandler.convert(num, unit)', function(){
 
     test('Gal to L', function(done){
-      var input = [5, 'gal'];
-      var expected = 18.9271;
+      let input = [5, 'gal'];
+      let expected = 18.9271;
       assert.approximately(convertHandler.convert(input[0], input[1]), expected, 0.1);
       done();
     });
+
     test('L to Gal', function(done){
-      var input = [5, 'l'];
-      var expected = 1.32086;
+      let input = [5, 'l'];
+      let expected = 1.32086;
+      assert.approximately(convertHandler.convert(input[0], input[1]), expected, 0.1);
+      done();
+    });
+
+    test('LBS to KG', function(done){
+      let input = [5, 'lbs'];
+      let expected = 2.26796;
+      assert.approximately(convertHandler.convert(input[0], input[1]), expected, 0.1);
+      done();
+    });
+
+    test('KG to LBS', function(done){
+      let input = [5, 'kg'];
+      let expected = 11.0231;
       assert.approximately(convertHandler.convert(input[0], input[1]), expected, 0.1);
       done();
     });
