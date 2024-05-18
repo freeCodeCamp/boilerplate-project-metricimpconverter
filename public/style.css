@@ -1,7 +1,17 @@
+:root {
+  --white-bone: #fcf1f1;
+  --blue-night: #0a101f;
+}
+
+body {
+  background-color: var(--blue-night);
+  color: var(--white-bone);
+}
+
 code {
-    background-color: whitesmoke;
+  background-color: none;
 }
 
 section, header {
-    margin: 50px;
+  margin: 50px;
 }
